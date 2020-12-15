@@ -1,0 +1,22 @@
+{
+  "name": "byvoidmodulegg",
+  "version": "0.0.1",
+  "description": "A module for learning perpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corgiyun/node_test.git"
+  },
+  "keywords": [
+    "console"
+  ],
+  "author": "lim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/corgiyun/node_test/issues"
+  },
+  "homepage": "https://github.com/corgiyun/node_test#readme"
+}
