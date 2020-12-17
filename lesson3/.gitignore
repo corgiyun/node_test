@@ -1,8 +1,0 @@
-node_modules
-build
-.env.*
-
-.DS_Store
-public/mock_data/**
-
-.idea
