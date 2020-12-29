@@ -1,28 +1,48 @@
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017";
 
-MongoClient.connect(url, (err, db)=> {
-  if(err) throw err;
+MongoClient.connect(url, (err, db) => {
+  if (err) throw err;
   var dbo = db.db('lesson');
-  var myObj = [
-    { name: '李四', age: 20 },
-    { name: '王五', age: 22 },
-    { name: '赵六', age: 24 },
+  var myObj = [{
+      name: '李四',
+      age: 20
+    },
+    {
+      name: '王五',
+      age: 22
+    },
+    {
+      name: '赵六',
+      age: 24
+    },
   ];
-  var products = [
-    { _id: 154, name: '笔记本电脑' },
-    { _id: 155, name: '耳机' },
-    { _id: 156, name: '台式电脑' }
+  var products = [{
+      _id: 154,
+      name: '笔记本电脑'
+    },
+    {
+      _id: 155,
+      name: '耳机'
+    },
+    {
+      _id: 156,
+      name: '台式电脑'
+    }
   ]
+  
+  
   // // 添加数据
-  // dbo.collection('products').insertMany(products, (err, res)=> {
-  //   if(err) throw err;
+  // dbo.collection('posts').insertMany(posts, (err, res) => {
+  //   if (err) throw err;
   //   console.log(`共插入${res.insertedCount}条数据`);
   //   db.close();
   // })
 
   // 查找数据
-  var whereStr = { name: '李四' };
+  var whereStr = {
+    name: '李四'
+  };
   // dbo.collection('site').find({}).toArray((err, res)=> {
   //   if(err) throw err;
   //   console.log(res);
@@ -84,5 +104,5 @@ MongoClient.connect(url, (err, db)=> {
   //   }
   // })
 
-  
+
 })
