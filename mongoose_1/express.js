@@ -1,5 +1,5 @@
 var express = require('express')();
-var { mongoose, User } = require('./mongoose');
+var { User } = require('./mongoose');
 
 express.get('/', (req,res)=> {
   res.send('Hello Express')
